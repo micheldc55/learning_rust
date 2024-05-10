@@ -1,4 +1,4 @@
-use std::io;
+use std::io; // brings io library into scope
 use rand::Rng;
 
 fn main() {
@@ -11,11 +11,14 @@ fn main() {
     println!("Please input your guess.");
 
     // "mut" makes variables mutable
-    let mut guess = String::new(); 
+    let mut guess = String::new(); //creates an empty instance of a String
 
-    io::stdin()
+    io::stdin() 
         .read_line(&mut guess)
         .expect("Failed to read line");
 
     println!("You guessed {guess}");
 }
+
+// if we hadn't imported the io library, we would have to write std::io::stdin() 
+// and instead of just io::stdin().
