@@ -1,5 +1,6 @@
-use std::io; // brings io library into scope
+use std::io;
 use rand::Rng;
+use std::cmp::Ordering;
 
 fn main() {
     println!("Guess the number!");
@@ -7,18 +8,21 @@ fn main() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     println!("The secret number is: {secret_number}");
-    
+
     println!("Please input your guess.");
 
-    // "mut" makes variables mutable
-    let mut guess = String::new(); //creates an empty instance of a String
+    let mut guess = String::new();
 
-    io::stdin() 
+    io::stdin()
         .read_line(&mut guess)
-        .expect("Failed to read line");
+        .expect("Failed to read line"); // If an error occurs, the program will crash and display the message.
 
-    println!("You guessed {guess}");
+    println!("You guessed: {guess}");
+
+    // Other ways to format the string
+    // let x: i32 = 7;
+    // println!("x is equal to: {}", x);
+    // println!("x plus two is: x + 2 = {}", x + 2);
+    
+    
 }
-
-// if we hadn't imported the io library, we would have to write std::io::stdin() 
-// and instead of just io::stdin().
