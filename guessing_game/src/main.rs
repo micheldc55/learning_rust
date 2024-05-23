@@ -5,9 +5,7 @@ use std::cmp::Ordering;
 fn main() {
     println!("Guess the number!");
 
-    let secret_number = rand::thread_rng().gen_range(1..=100);
-
-    println!("The secret number is: {secret_number}");
+    let secret_number = rand::thread_rng().gen_range(1..=20);
 
     loop {    println!("Please input your guess.");
 
@@ -22,8 +20,9 @@ fn main() {
         // parse() converts the string to a number
         // expect() is used to handle errors
         let guess: u32 = match guess.trim().parse() {
-            
-        }
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("You guessed: {guess}");
 
