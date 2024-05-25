@@ -53,6 +53,7 @@ fn main() {
 
 
     // ** COMPOUND TYPES **
+    // Tuples --> Can have multiple types in the same tuple
     let tup: (u16, f32, char) = (12, -1.1, 'h');
 
     // tuple destructuring
@@ -70,4 +71,25 @@ fn main() {
         sixteen, 
         seven_point_three
     );
+
+    // Arrays --> Only accepts Single Types and a FIXED number of elements
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    // useful like above when you know the number of elements isn't going to change
+
+    let arr: [i32; 5] = [1, 2, 3, 4, 5]; // type annotation indicates an array of 5 i32 elements
+    let arr2 = [3; 5]; // this format creates an array of 5 elements with the value 3 
+    let arr3 = [3, 3, 3, 3, 3]; // this is the same as arr2
+
+    // Accessing array elements
+    let first_month = months[0];
+    println!("First Month: {first_month}");
+
+    let first = arr[0];
+    let first2 = arr2[0];
+    let first3 = arr3[0];
+    println!("First Element of arrays 1, 2, 3 respectively: {first} | {first2} | {first3}");
+
+    let t = ([1; 2], [3; 4]);
+    let (a, b) = t;
+    println!("{}", a[0] + t.1[0]); 
 }
