@@ -10,6 +10,12 @@ fn main() {
     println!("Expressions:\n");
 
     calling_functions(6);
+
+    expression_in_scope(12);
+
+    let area = return_something(2);
+
+    println!("The area calculated is {area} cm2");
 }
 
 // functions can be defined anywhere in the file
@@ -37,15 +43,30 @@ fn multi_param_function(x: f32, y: f32) {
 
 // An expression is something that evaluates to a value.
 // Operations, Calling functions, calling macros are all expressions
-fn expressions (num: i8) -> i8 {
+fn expressions(num: i8) -> i8 {
     num + 2
 }
 
-fn calling_functions (num: i8) {
+fn calling_functions(num: i8) {
     let plus_two = expressions(num); // expression
 
     println!("Result: {plus_two}")
 }
 
-
 // Also, a new scope inside curly brackets is an expression
+fn expression_in_scope(num: u8) {
+    let result = {
+        let mut p = num as i16;
+        p = -p;
+        p
+    };
+
+    println!("Changed the sign of {num} to {result}")
+}
+
+// Return statements --> Functions that have a return have to type hint the return
+// The last EXPRESSION of a function is returned. We omit the semicolon for the return
+fn return_something(radius: i8) -> f32 {
+    let area = radius as f32 * 3.141593;
+    area
+}
