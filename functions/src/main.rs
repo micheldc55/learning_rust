@@ -35,14 +35,17 @@ fn multi_param_function(x: f32, y: f32) {
 }
 
 // *** EXPRESSIONS AND STATEMENTS ***
-// This line is commented because it won't compile
-// statements like "let" don't return a value, so they cannot be assigned 
-// fn statement () {
-//     let x = (let y = 6);
-// }
+/*  This line is commented because it won't compile
+statements like "let" don't return a value, so they cannot be assigned 
+fn statement () {
+    let x = (let y = 6);
+}
+*/
 
-// An expression is something that evaluates to a value.
-// Operations, Calling functions, calling macros are all expressions
+/* 
+An expression is something that evaluates to a value.
+Operations, Calling functions, calling macros are all expressions
+*/
 fn expressions(num: i8) -> i8 {
     num + 2
 }
@@ -64,8 +67,9 @@ fn expression_in_scope(num: u8) {
     println!("Changed the sign of {num} to {result}")
 }
 
-// Return statements --> Functions that have a return have to type hint the return
-// The last EXPRESSION of a function is returned. We omit the semicolon for the return
+/* Return statements --> Functions that have a return have to type hint the return
+The last EXPRESSION of a function is returned. We omit the semicolon for the return
+*/
 fn return_something(radius: i8) -> f32 {
     let area = radius as f32 * 3.141593;
     area
