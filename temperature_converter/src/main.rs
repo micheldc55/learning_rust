@@ -19,7 +19,7 @@ fn main() {
 
     let fahrenheit: f32 = celsius_to_fahrenheit(celsius);
 
-    println!("{fahrenheit}")
+    println!("{celsius}°C is {fahrenheit}°F")
 }
 
 fn celsius_to_fahrenheit(temp: f32) -> f32 {
