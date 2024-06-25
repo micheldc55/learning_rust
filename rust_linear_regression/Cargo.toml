@@ -7,3 +7,4 @@ edition = "2021"
 ndarray = "0.15"
 ndarray-linalg = "0.14"
 pyo3 = { version = "0.17.3", features = ["extension-module"] }
+statrs = "0.15"
