@@ -1,0 +1,9 @@
+[package]
+name = "rust_linear_regression"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+ndarray-linalg = "0.14"
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
