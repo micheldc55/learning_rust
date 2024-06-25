@@ -1,0 +1,8 @@
+/Users/davidovichm/Desktop/Michel/learning_rust/rust_linear_regression/target/debug/build/target-lexicon-d278b95d2f21d581/build_script_build-d278b95d2f21d581: /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/build.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/data_model.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/triple.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/targets.rs
+
+/Users/davidovichm/Desktop/Michel/learning_rust/rust_linear_regression/target/debug/build/target-lexicon-d278b95d2f21d581/build_script_build-d278b95d2f21d581.d: /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/build.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/data_model.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/triple.rs /Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/targets.rs
+
+/Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/build.rs:
+/Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/data_model.rs:
+/Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/triple.rs:
+/Users/davidovichm/.cargo/registry/src/index.crates.io-6f17d22bba15001f/target-lexicon-0.12.14/src/targets.rs:
