@@ -21,7 +21,7 @@ fn linear_regression(x: Vec<Vec<f64>>, y: Vec<f64>) -> PyResult<(Vec<f64>, Vec<f
 
     // Residuals computation:
     let y_hat = x.dot(&beta);
-    let residuales = &y - &y_hat;
+    let residuals = &y - &y_hat;
 
     let n: f64 = y.len() as f64;
     let p: f64 = beta.len() as f64;
